@@ -1,0 +1,30 @@
+HEAD is now at dd5c50b commit
+commit 8d1a08193020ce19e89478907d6ce246de4cd212 (HEAD -> rishi, origin/rishi)
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Jan 5 09:24:45 2022 +0530
+
+    added custom css
+
+commit 36ea3a931605bdbf0f3559de70f6dfed2a743f0d
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Tue Jan 4 15:07:01 2022 +0530
+
+    deleted css
+
+commit eeee3bb5ed7a9f1f3e8949993eebe6d706a9d875
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Tue Jan 4 15:00:43 2022 +0530
+
+    added sandbox files
+
+commit 88abed403e4f7ccbb81f3315a1f6772c15f2d183
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Tue Jan 4 10:35:58 2022 +0530
+
+    adddede bootstrap
+
+commit 56bdaba7daf7f966ae35b31b82d575e6f2c8ae92
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Dec 29 11:20:57 2021 +0530
+
+    INITIAL COMMIT

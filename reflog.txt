@@ -1,0 +1,19 @@
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{0}: checkout: moving from new_branch to rishi
+dd5c50b (new_branch) HEAD@{1}: reset: moving to HEAD
+dd5c50b (new_branch) HEAD@{2}: commit: commit
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{3}: reset: moving to HEAD
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{4}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{5}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{6}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{7}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{8}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{9}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{10}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{11}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{12}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{13}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi) HEAD@{14}: commit: added custom css
+36ea3a9 HEAD@{15}: commit: deleted css
+eeee3bb HEAD@{16}: commit: added sandbox files
+88abed4 HEAD@{17}: commit: adddede bootstrap
+56bdaba HEAD@{18}: commit (initial): INITIAL COMMIT

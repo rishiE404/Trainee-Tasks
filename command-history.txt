@@ -1,0 +1,439 @@
+Last login: Tue Jan  4 16:07:52 on ttys000
+    ~  Desktop/TASKS                                                    ✔
+    ~/Des/TASKS    rishi !2  git reflog                              ✔
+    ~/Des/TASKS    rishi !2  git branch temp1                ✔  48s 
+    ~/Des/TASKS    rishi !2  git switch temp1                        ✔
+M	SANDBOX/index.html
+M	SANDBOX/style.css
+Switched to branch 'temp1'
+    ~/Des/TASKS    temp1 !2  git branch -e                           ✔
+error: unknown switch `e'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+    ~/Des/TASKS    temp1 !2  git branch -r                       HUP ✘
+    ~/Des/TASKS    temp1 !2  git branch -a                           ✔
+    ~/Des/TASKS    temp1 !2  git checkout -b temp1_sandbox           ✔
+Switched to a new branch 'temp1_sandbox'
+    ~/Des/TASKS    temp1_sandbox !2  ls -l                           ✔
+total 984
+drwxr-xr-x  4 rishishah  staff     128 Dec 30 15:31 BOOTSTRAP
+drwxr-xr-x  5 rishishah  staff     160 Dec 20 16:48 DAY 1
+drwxr-xr-x  5 rishishah  staff     160 Dec 21 15:33 DAY 2
+-rw-r--r--@ 1 rishishah  staff  503436 Dec 27 10:19 Rishi_Task_Day1_2.zip
+commit 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 (HEAD -> temp1_sandbox)
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Jan 5 11:36:34 2022 +0530
+
+    added temo branch with temp file
+
+commit 8d1a08193020ce19e89478907d6ce246de4cd212 (origin/rishi, temp1, rishi)
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Jan 5 09:24:45 2022 +0530
+
+    added custom css
+drwxr-xr-x  4 rishishah  staff     128 Jan  4 15:14 SANDBOX
+    ~/Des/TASKS    temp1_sandbox !2  touch temp1.txt                 ✔
+    ~/Des/TASKS    temp1_sandbox !2 ?1  git status                   ✔
+On branch temp1_sandbox
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   SANDBOX/index.html
+	modified:   SANDBOX/style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	temp1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+    ~/Des/TASKS    temp1_sandbox !2 ?1  git add .                    ✔
+    ~/Des/TASKS    temp1_sandbox +3  git commit -m "added temo branch with temp file"
+[temp1_sandbox 598e72b] added temo branch with temp file
+ 3 files changed, 120 insertions(+), 1898 deletions(-)
+ rewrite SANDBOX/index.html (97%)
+ rewrite SANDBOX/style.css (99%)
+ create mode 100644 temp1.txt
+    ~/Des/TASKS    temp1_sandbox  git log                            ✔
+    ~/Des/TASKS    temp1_sandbox  git checkout rishi          ✔  8s 
+Switched to branch 'rishi'
+Your branch is up to date with 'origin/rishi'.
+    ~/Des/TASKS    rishi  git checkout 598e72b                       ✔
+Note: switching to '598e72b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 598e72b added temo branch with temp file
+    ~/Des/TASKS   @598e72b5  git checkout temp1_sandbox               ✔
+Switched to branch 'temp1_sandbox'
+    ~/Des/TASKS    temp1_sandbox  git push origin -u temp1_sandbox   ✔
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.62 KiB | 1.62 MiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'temp1_sandbox' on GitHub by visiting:
+remote:      https://github.com/rishiE404/Trainee-Tasks/pull/new/temp1_sandbox
+remote:
+To https://github.com/rishiE404/Trainee-Tasks.git
+ * [new branch]      temp1_sandbox -> temp1_sandbox
+Branch 'temp1_sandbox' set up to track remote branch 'temp1_sandbox' from 'origin'.
+    ~/Des/TASKS    temp1_sandbox  git bra                            ✔
+git: 'bra' is not a git command. See 'git --help'.
+
+The most similar commands are
+	branch
+	var
+    ~/Des/TASKS    temp1_sandbox  git branch -a                    1 ✘
+    ~/Des/TASKS    temp1_sandbox  git branch -d temp1         ✔  4s 
+Deleted branch temp1 (was 8d1a081).
+    ~/Des/TASKS    temp1_sandbox  git branch -d temp1_sandbox        ✔
+error: Cannot delete branch 'temp1_sandbox' checked out at '/Users/rishishah/Desktop/TASKS'
+    ~/Des/TASKS    temp1_sandbox  git checkout rishi               1 ✘
+Switched to branch 'rishi'
+Your branch is up to date with 'origin/rishi'.
+    ~/Des/TASKS    rishi  git branch                                 ✔
+    ~/Des/TASKS    rishi  git branch -rename                         ✔
+error: unknown switch `e'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+  new_branch
+* rishi
+  remotes/origin/rishi
+  remotes/origin/temp1_sandbox
+...skipping...
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+~
+(END)
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{0}: checkout: moving from new_branch to rishi
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{1}: checkout: moving from rishi to new_branch
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{2}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{3}: checkout: moving from 598e72b54cc17f61484ba3ea0e3a3cc7f7449086 to temp1_sandbox
+598e72b (origin/temp1_sandbox) HEAD@{4}: checkout: moving from rishi to 598e72b
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{5}: checkout: moving from temp1_sandbox to rishi
+598e72b (origin/temp1_sandbox) HEAD@{6}: commit: added temo branch with temp file
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{7}: checkout: moving from temp1 to temp1_sandbox
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{8}: checkout: moving from rishi to temp1
+8d1a081 (HEAD -> rishi, origin/rishi, new_branch) HEAD@{9}: commit: added custom css
+36ea3a9 HEAD@{10}: commit: deleted css
+eeee3bb HEAD@{11}: commit: added sandbox files
+88abed4 HEAD@{12}: commit: adddede bootstrap
+56bdaba HEAD@{13}: commit (initial): INITIAL COMMIT
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+    ~/Des/TASKS    rishi  git branch -d temp1_sandbox            HUP ✘
+warning: deleting branch 'temp1_sandbox' that has been merged to
+         'refs/remotes/origin/temp1_sandbox', but not yet merged to HEAD.
+Deleted branch temp1_sandbox (was 598e72b).
+    ~/Des/TASKS    rishi  git switch -c new_branch                   ✔
+Switched to a new branch 'new_branch'
+    ~/Des/TASKS    new_branch  git switch -                          ✔
+Switched to branch 'rishi'
+Your branch is up to date with 'origin/rishi'.
+    ~/Des/TASKS    rishi  git branch -a                              ✔
+    ~/Des/TASKS    rishi                                      ✔  5s 
+    ~/Des/TASKS    rishi  git reflog                                 ✔
+    ~/Desktop/TASKS    rishi  git switch new_branch                                     ✔  14s 
+Switched to branch 'new_branch'
+    ~/Desktop/TASKS    new_branch  ls                                                           ✔
+BOOTSTRAP             DAY 2                 SANDBOX
+DAY 1                 Rishi_Task_Day1_2.zip
+    ~/Desktop/TASKS    new_branch  git status                                                   ✔
+On branch new_branch
+nothing to commit, working tree clean
+    ~/Desktop/TASKS    new_branch  nano DAY\ 1/                                                 ✔
+    ~/Des/TASKS    new_branch  nano DAY\ 1/index.html                                    ✔  5s 
+    ~/Des/TASKS    new_branch !2  git status                                         ✔  1m 18s 
+On branch new_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   DAY 1/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+    ~/Desktop/TASKS    new_branch !2  git stash                                                 ✔
+Saved working directory and index state WIP on new_branch: 8d1a081 added custom css
+    ~/Desktop/TASKS    new_branch *1  git status                                                ✔
+On branch new_branch
+nothing to commit, working tree clean
+    ~/Desktop/TASKS    new_branch *1  git stash apply                                           ✔
+On branch new_branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   DAY 1/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+    ~/Desktop/TASKS    new_branch *1 !2  git stash list                                         ✔
+    ~/Desktop/TASKS    new_branch *1 !2  git commit -a -m "commit"                              ✔
+[new_branch dd5c50b] commit
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+    ~/Desktop/TASKS    new_branch *1  git status                                                ✔
+On branch new_branch
+nothing to commit, working tree clean
+commit 8d1a08193020ce19e89478907d6ce246de4cd212 (HEAD -> rishi, origin/rishi)
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Jan 5 09:24:45 2022 +0530
+
+    added custom css
+    ~/Desktop/TASKS    new_branch *1  git reflog                                                ✔
+    ~/Des/TASKS    new_branch *1  git reset --hard HEAD                                  ✔  6s 
+HEAD is now at dd5c50b commit
+commit 8d1a08193020ce19e89478907d6ce246de4cd212 (HEAD -> rishi, origin/rishi)
+Author: Rishi Shah <rishibshah@gmail.com>
+Date:   Wed Jan 5 09:24:45 2022 +0530
+
+    added custom css
+    ~/Desktop/TASKS    new_branch *1  git stash list                                            ✔
+    ~/Desktop/TASKS    new_branch *1                                                            ✔
+    ~/Desktop/TASKS    new_branch *1  git stash -u                                              ✔
+No local changes to save
+    ~/Desktop/TASKS    new_branch *1  git status                                                ✔
+On branch new_branch
+nothing to commit, working tree clean
+    ~/Desktop/TASKS    new_branch *1  git checkout rishi                                        ✔
+Switched to branch 'rishi'
+Your branch is up to date with 'origin/rishi'.
+    ~/Desktop/TASKS    rishi *1  git status                                                     ✔
+On branch rishi
+Your branch is up to date with 'origin/rishi'.
+
+nothing to commit, working tree clean
+    ~/Desktop/TASKS    rishi *1  git reflog                                                     ✔
+    ~/Desktop/TASKS    rishi *1  touch reflog.txt                                        ✔  9s 
+    ~/Desktop/TASKS    rishi *1 ?1  nano reflog.txt                                             ✔
+    ~/Des/TASKS    rishi *1 ?1  echo reflog.txt                                          ✔  7s 
+reflog.txt
+    ~/Desktop/TASKS    rishi *1 ?1  git log                                                     ✔
+    ~/Des/TASKS    rishi *1 ?1  touch log.txt                                           ✔  13s 
+    ~/Desktop/TASKS    rishi *1 ?2  nano log.txt                                                ✔
+    ~/Des/TASKS    rishi *1 ?2  git log                                                 ✔  13s 
+    ~/Des/TASKS    rishi *1 ?2  nano log.txt                                            ✔  12s 
+    ~/Des/TASKS    rishi *1 ?2                                                           ✔  9s 
